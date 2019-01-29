@@ -14,4 +14,4 @@ console.log("----------------------------")
 
 const multiply = (a1, a2) => a1*a2;
 console.log(multiply(2,3));
-console.log("----------------------------")
+console.log("-----------------------------")
