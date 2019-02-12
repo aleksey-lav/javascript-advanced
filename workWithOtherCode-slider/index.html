@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<div class="galleria">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
+   <!-- <img src="photo4.png">
+    <img src="photo5.jpg">-->
+</div>
+<script>
+    (function() {
+        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+        Galleria.configure({
+            transition: 'fade',
+            imageCrop: true,
+            height: 700,
+            width: 800
+        });
+        Galleria.run('.galleria');
+    }());
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="galleria/galleria-1.5.7.js"></script>
+</body>
+</html>
