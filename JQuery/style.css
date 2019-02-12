@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+.list{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+button {
+    margin-right: 20px;
+    border-radius: 6px;
+    width: 70px;
+    height: 30px;
+}
+button:hover{
+    background-color: #ffbe16;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(194, 75, 21, 0.91);
+
+}
+
+.image{
+    border: 4px solid #c24b15;
+}
+.active{
+    width: 80px;
+    height: 40px;
+    transition: 1.1s;
+}
