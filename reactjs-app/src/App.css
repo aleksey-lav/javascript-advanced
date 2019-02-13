@@ -31,3 +31,36 @@
     transform: rotate(360deg);
   }
 }
+.wrapper{
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+  box-shadow: 5px 5px 40px;
+
+}
+.rest_block{
+  height: 80px;
+  line-height: 80px;
+  background-color: #F67;
+  font-size: 24px;
+  color: #fff;
+}
+.work_block{
+  height: 80px;
+  line-height: 80px;
+  background-color: #A9F;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FE7;
+}
+.clicker{
+  width: 170px;
+  border-radius: 8px;
+  height: 40px;
+  margin-top: 30px;
+  outline: none;
+
+}
