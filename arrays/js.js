@@ -66,3 +66,20 @@ function compareNum(a,b){
     return (a-b);
 }
 console.log(sort);
+
+
+class Student {
+    constructor(gpa) {
+        this.gpa = gpa+"";
+        this.stringGPA = function() {
+            return this.gpa.toString();
+        }
+    }
+   /* stringGPA(){
+        return this.gpa;
+    }*/
+
+}
+const student = new Student(4);
+console.log(typeof student.stringGPA())
+// console.log(typeof student.stringGPA())
