@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API themoviedb</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="header">
+    <h1 onclick="hideResults()">Movie & TV shows</h1>
+    <span id="sub_title">for Apiko by Leichenko</span>
+  </div>
+  <div id="container">
+    <div id="search-container">
+      <input type="search" id="movieSearchBox" placeholder="search">
+      <button id="searchButton" onclick="searchMovies()">Search</button>
+      <button id="searchButton" class="btn-back" onclick="showTrending()">BACK</button>
+    </div>
+    <div id="results-container"></div>
+  </div>  
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

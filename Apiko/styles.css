@@ -1,0 +1,147 @@
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100%; 
+  text-align: left;
+}
+
+.bc-light-strip-even {
+  background-color: #ffffff;
+}
+
+.bc-light-strip-odd {
+  background-color: #ffffffb9;
+
+}
+
+.color-dark-gray {
+  color: #545454;
+}
+
+.fr {
+  float: right;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+#header {
+  width: 100%;
+  overflow: auto;
+  border-bottom: 1px solid gray;
+  background-color: #ffffff;
+  padding: 5px 80px;
+  
+}
+h3{
+  color: rgb(238, 213, 213)
+}
+h1, h3 {
+  display: inline-block;
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 1.5em
+
+}
+
+#header h1 {
+  cursor: pointer;
+}
+
+#header h1:active {
+  color: #080808;
+}
+
+#results-container h1 {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#sub_title {
+  font-weight: bold;
+  margin-left: 20px;
+  color: tomato;
+  text-decoration: underline;
+}
+
+#container {
+  padding: 20px 100px 0px 100px;
+  
+}
+
+#search-container {
+  margin-bottom: 20px;
+
+}
+
+#movieSearchBox {
+  width: 340px;
+  font-size: 14pt;
+  -webkit-appearance: none;
+}
+
+button {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid gray;
+  background-color: #e9e9e9;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.btn-back{
+  border: 3px solid rgba(243, 1, 1, 0.507);
+  border-radius: 50% 50%
+}
+button:hover {
+  box-shadow: 2px 2px 2px black;
+}
+
+button:active {
+  border: 2px solid black;
+}
+
+#results-container {
+  display: none;
+  width: 60%;
+  border: 2px solid #545454
+
+  
+}
+.results-list-film {
+  padding: 10px;
+  cursor: pointer;
+  color: #0a1d2c;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12pt;
+
+}
+
+.results-list-film:hover {
+  background-color:tomato;
+  color: #1d1b1b
+}
+
+.year {
+  color: black;
+}
+
+#results-container img {
+  width: 260px;
+  float: left;
+  margin: 0px 20px 20px 0px;
+}
+
+#rating {
+  display: inline;
+  margin-left: 20px;
+  padding: 5px 10px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+
