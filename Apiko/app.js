@@ -15,7 +15,10 @@ function showTrending() {
       preResults('results');
       searchResults = JSON.parse(request.responseText).results;         
       resultsContainer.innerHTML = `<h3>${searchResults.length} Results for</h3>`;
-      searchResults.forEach(showRequestListFilms);        
+      searchResults.forEach(function(item){
+        console.log(item);
+        showRequestListFilms(item);
+      });      
       console.log('------: ', JSON.parse(request.responseText));
     }
   };  
@@ -63,9 +66,9 @@ function preResults(option) {
 }
 //Display film data 
 function showRequestListFilms(result) {
-  let title = result.title;
+  let title = result.title ? result.title : result.name
   let id = result.id;
-  let releaseDate = `<span class='year'>(${result.release_date.slice(0,4)})</span>` || `<span class='year'>(release date unavailable)</span>`;
+  let releaseDate = `<span class='year'>(${result.release_date || result.first_air_date})</span>` || `<span class='year'>(release date unavailable)</span>`;
   let resultDiv = document.createElement('div');
   let colorClass = (resultsIndex % 2 === 0 ) ? 'bc-light-strip-even' : 'bc-light-strip-odd';
   resultDiv.innerHTML = `<div class='results-list-film ${colorClass}' onclick='requestDetailMovie(${id})'>${title} ${releaseDate}</div>`;
