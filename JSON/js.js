@@ -13,3 +13,5 @@ let options = {
  console.log(JSON.stringify(options));
  console.log("----------------------------")
  console.log(JSON.parse(JSON.stringify(options)));
+
+ const a = document.createDocumentFragment("<h1>Hello<h1>") 

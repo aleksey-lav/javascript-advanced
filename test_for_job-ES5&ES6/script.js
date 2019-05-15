@@ -1,6 +1,6 @@
 
 // ES 5
-function Animal(name) {
+/* function Animal(name) {
     this.name = name;
     this.getName = function () {
         return this.name;
@@ -15,8 +15,8 @@ function Dog(name) {
 Dog.prototype = Object.create(Animal.prototype);
 
 var dog = new Dog('Aban');
-dog.getName() === 'Aban';
-dog.bark() === 'Dog Aban is barking';
+console.log(dog.getName() === 'Aban');
+console.log(dog.bark() === 'Dog Aban is barking'); */
 
 /*//Palindrome
 function checkPalindrome(inputString) {
@@ -61,7 +61,7 @@ dog.bark () === 'Dog Aban is barking'; // true
 */
 
 //ES 6
-/*
+
 class Animal  {
     constructor(name){
         this.name = name;
@@ -70,11 +70,22 @@ class Animal  {
         return (`Hello ${this.name}`)
     }
 }
-class Dog1 extends Animal1{
+class Dog1 extends Animal{
     bark(){
         return (`Dog ${this.name} is barking`)
     }
 }
 let dog = new Dog1('Aban');
-dog.getName();
-dog.bark();*/
+console.log(dog.getName())
+console.log(dog.bark())
+
+
+//how to write and create new file with node js //sync
+var fs = require('fs')
+var mess = "hello, world"
+fs.writeFileSync('test.txt', mess)
+
+ 
+let a = [1,2,4,5,3,2,3,]
+let St = new Set(a)
+console.log(St)

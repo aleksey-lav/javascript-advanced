@@ -1,5 +1,5 @@
 
-const key = '';
+const key = '7f00bc57f618ffc3cddc20dc92645de6';
 const resultsContainer = document.getElementById('results-container');
 const movieSearchBox = document.getElementById('movieSearchBox');
 let resultsIndex = 0
