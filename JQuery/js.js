@@ -4,7 +4,7 @@
      });
 
      //animation
-     $('.list-item:eq(2)').on('click', function () {
+     $('.list-item:eq(1)').on('click', function () {
          $('.image:even').fadeToggle('slow');
      });
 
